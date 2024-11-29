@@ -6,7 +6,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["src/**/*.ts", "tsconfig.json", "tsconfig.*.json"],
+      "inputs": ["src/**/*.ts", "tsconfig.json", "tsconfig.*.json", "package.json"],
       "outputs": ["dist/**", ".tshy", ".tshy-build"]
     },
     "pack": {
