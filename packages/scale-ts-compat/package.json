@@ -1,0 +1,62 @@
+{
+  "name": "@substrate-sdk/scale-ts-compat",
+  "version": "0.0.0",
+  "author": "Ryan Lee <ryanleecode@gmail.com>",
+  "type": "module",
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts",
+  "module": "./dist/esm/mod.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "@substrate-sdk/source": "./src/mod.ts",
+        "types": "./dist/esm/mod.d.ts",
+        "default": "./dist/esm/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/mod.d.ts",
+        "default": "./dist/commonjs/mod.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substrate-sdk/substrate-sdk.git"
+  },
+  "keywords": [
+    "substrate",
+    "polkadot"
+  ],
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "project": "./tsconfig.build.json",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/mod.ts"
+    },
+    "sourceDialects": [
+      "@substrate-sdk/source"
+    ],
+    "exclude": [
+      "src/**/*.test.ts"
+    ]
+  },
+  "scripts": {
+    "prepare": "pnpm turbo build",
+    "clean": "rimraf dist .tshy .tshy-build",
+    "build": "pnpm run clean && tshy",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@substrate-sdk/scale-codec": "workspace:^",
+    "@substrate-sdk/encoding": "workspace:^",
+    "scale-ts": "^1.6.1",
+    "effect": "^3.10.19"
+  },
+  "peerDependencies": {
+    "scale-ts": "^1.6.1"
+  }
+}
