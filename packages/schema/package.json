@@ -1,0 +1,55 @@
+{
+  "name": "@substrate-sdk/schema",
+  "version": "0.0.0",
+  "author": "Ryan Lee <ryanleecode@gmail.com>",
+  "type": "module",
+  "main": "./dist/commonjs/mod.js",
+  "types": "./dist/commonjs/mod.d.ts",
+  "module": "./dist/esm/mod.js",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": {
+        "@substrate-sdk/source": "./src/mod.ts",
+        "types": "./dist/esm/mod.d.ts",
+        "default": "./dist/esm/mod.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/mod.d.ts",
+        "default": "./dist/commonjs/mod.js"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substrate-sdk/substrate-sdk.git"
+  },
+  "keywords": [
+    "substrate",
+    "polkadot"
+  ],
+  "files": [
+    "dist"
+  ],
+  "tshy": {
+    "project": "./tsconfig.build.json",
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/mod.ts"
+    },
+    "sourceDialects": [
+      "@substrate-sdk/source"
+    ]
+  },
+  "scripts": {
+    "prepare": "pnpm turbo build",
+    "clean": "rimraf dist .tshy .tshy-build",
+    "build": "pnpm run clean && tshy"
+  },
+  "devDependencies": {
+    "effect": "^3.11.7"
+  },
+  "peerDependencies": {
+    "effect": "^3.11.7"
+  }
+}
