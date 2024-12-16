@@ -47,6 +47,6 @@
     "build": "pnpm run clean && tshy"
   },
   "dependencies": {
-    "@substrate/ws-provider": "~0.3.7"
+    "@substrate/ws-provider": "~0.3.8"
   }
 }

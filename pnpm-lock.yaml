@@ -53,8 +53,8 @@ importers:
   packages/ws-provider:
     dependencies:
       '@substrate/ws-provider':
-        specifier: ~0.3.7
-        version: 0.3.7
+        specifier: ~0.3.8
+        version: 0.3.8
 
 packages:
 
@@ -434,9 +434,6 @@ packages:
   '@polkadot-api/json-rpc-provider@0.0.4':
     resolution: {integrity: sha512-9cDijLIxzHOBuq6yHqpqjJ9jBmXrctjc1OFqU+tQrS96adQze3mTIH6DTgfb/0LMrqxzxffz1HQGrIlEH00WrA==}
 
-  '@polkadot-api/ws-provider@0.3.6':
-    resolution: {integrity: sha512-D2+rvcDc9smt24qUKqFoCuKKNhyBVDQEtnsqHiUN/Ym8UGP+Acegac3b9VOig70EpCcRBoYeXY2gEog2ybx1Kg==}
-
   '@rollup/rollup-android-arm-eabi@4.27.4':
     resolution: {integrity: sha512-2Y3JT6f5MrQkICUyRVCw4oa0sutfAsgaSsb0Lmmy1Wi2y7X5vT9Euqw4gOsCyy0YfKURBg35nhUKZS4mDcfULw==}
     cpu: [arm]
@@ -549,8 +546,8 @@ packages:
   '@rushstack/ts-command-line@4.23.1':
     resolution: {integrity: sha512-40jTmYoiu/xlIpkkRsVfENtBq4CW3R4azbL0Vmda+fMwHWqss6wwf/Cy/UJmMqIzpfYc2OTnjYP1ZLD3CmyeCA==}
 
-  '@substrate/ws-provider@0.3.7':
-    resolution: {integrity: sha512-LrBXISjVxywMUajOfwCWOYgYDpYkjndbiR7w6Oga6YuUAo3cNvwrgpY3muxq/5Rdkvbbot+bufvJMcQUoUtYSw==}
+  '@substrate/ws-provider@0.3.8':
+    resolution: {integrity: sha512-FisEPsR8Z51jHHlkvXhi5BsU09pNTfoqfenQjSjAD98OW7bkjee+FNObramsYZY6gLt/gO0fExEIrD9y4GT4hg==}
 
   '@total-typescript/tsconfig@1.0.4':
     resolution: {integrity: sha512-fO4ctMPGz1kOFOQ4RCPBRBfMy3gDn+pegUfrGyUFRMv/Rd0ZM3/SHH3hFCYG4u6bPLG8OlmOGcBLDexvyr3A5w==}
@@ -1186,18 +1183,6 @@ packages:
     resolution: {integrity: sha512-si7QWI6zUMq56bESFvagtmzMdGOtoxfR+Sez11Mobfc7tm+VkUckk9bW2UeffTGVUbOksxmSw0AA2gs8g71NCQ==}
     engines: {node: '>=12'}
 
-  ws@8.18.0:
-    resolution: {integrity: sha512-8VbfWfHLbbwu3+N6OKsOMpBdT4kXPDDB9cJk2bJ6mh9ucxdlnNvH1e+roYkKmN9Nxw2yjz7VzeO9oOz2zJ04Pw==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
@@ -1441,15 +1426,6 @@ snapshots:
 
   '@polkadot-api/json-rpc-provider@0.0.4': {}
 
-  '@polkadot-api/ws-provider@0.3.6':
-    dependencies:
-      '@polkadot-api/json-rpc-provider': 0.0.4
-      '@polkadot-api/json-rpc-provider-proxy': 0.2.4
-      ws: 8.18.0
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
-
   '@rollup/rollup-android-arm-eabi@4.27.4':
     optional: true
 
@@ -1538,14 +1514,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@substrate/ws-provider@0.3.7':
+  '@substrate/ws-provider@0.3.8':
     dependencies:
       '@polkadot-api/json-rpc-provider': 0.0.4
       '@polkadot-api/json-rpc-provider-proxy': 0.2.4
-      '@polkadot-api/ws-provider': 0.3.6
-    transitivePeerDependencies:
-      - bufferutil
-      - utf-8-validate
 
   '@total-typescript/tsconfig@1.0.4': {}
 
@@ -2188,7 +2160,5 @@ snapshots:
       ansi-styles: 6.2.1
       string-width: 5.1.2
       strip-ansi: 7.1.0
-
-  ws@8.18.0: {}
 
   yallist@4.0.0: {}
