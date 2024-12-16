@@ -11,7 +11,6 @@ export default defineConfig([
     sourcemap: true,
     clean: true,
     tsconfig: './tsconfig.build.json',
-    noExternal: ['@std/bytes'],
   },
   {
     entry: {
@@ -23,6 +22,5 @@ export default defineConfig([
     sourcemap: true,
     clean: true,
     tsconfig: './tsconfig.build.json',
-    noExternal: ['@std/bytes'],
   },
 ])

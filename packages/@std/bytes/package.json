@@ -1,5 +1,5 @@
 {
-  "name": "@substrate-sdk/bytes",
+  "name": "@substrate-sdk/std__bytes",
   "version": "0.0.0",
   "author": "Ryan Lee <ryanleecode@gmail.com>",
   "type": "module",
