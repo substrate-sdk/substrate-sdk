@@ -1,0 +1,34 @@
+version: 2
+
+updates:
+  - package-ecosystem: npm
+    directory: "/"
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 25
+    groups:
+      polkadot-api:
+        patterns:
+          - "@polkadot-api/*"
+          - "polkadot-api"
+      polkadot-labs:
+        patterns:
+          - "@polkadot-labs/*"
+      pjs:
+        patterns:
+          - "@polkadot/*"
+      drizzle:
+        patterns:
+          - "drizzle-kit"
+          - "drizzle-orm"
+      effect:
+        patterns:
+          - "@effect/*"
+          - "effect"
+      otel:
+        patterns:
+          - "@opentelemetry/*"
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
