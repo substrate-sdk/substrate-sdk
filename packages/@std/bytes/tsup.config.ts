@@ -10,7 +10,6 @@ export default defineConfig([
     dts: true,
     sourcemap: true,
     clean: true,
-    tsconfig: './tsconfig.build.json',
   },
   {
     entry: {
@@ -21,6 +20,5 @@ export default defineConfig([
     dts: true,
     sourcemap: true,
     clean: true,
-    tsconfig: './tsconfig.build.json',
   },
 ])
