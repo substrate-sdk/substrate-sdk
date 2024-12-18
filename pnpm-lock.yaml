@@ -45,8 +45,8 @@ importers:
   packages/schema:
     devDependencies:
       effect:
-        specifier: ^3.11.7
-        version: 3.11.7
+        specifier: ^3.11.8
+        version: 3.11.8
 
   packages/substrate-sdk: {}
 
@@ -689,8 +689,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  effect@3.11.7:
-    resolution: {integrity: sha512-laj+TCxWGn0eOv6jNmS9vavMO01Z4vvRr7v5airaOUfE7Zr5PrHiECpiI5HRvOewxa1im/4EcOvRodOZ1S2Y7Q==}
+  effect@3.11.8:
+    resolution: {integrity: sha512-N16cwqUDqG7lyYiFyt+in0+OS0Lg9pkMmGPSwxu2j9ZhRHI8S8D69+ffXX+afhl80r6syBSSkkIg/bYRjGGf7A==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1678,7 +1678,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  effect@3.11.7:
+  effect@3.11.8:
     dependencies:
       fast-check: 3.23.2
 

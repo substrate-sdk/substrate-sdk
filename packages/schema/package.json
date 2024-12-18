@@ -47,9 +47,9 @@
     "build": "pnpm run clean && tshy"
   },
   "devDependencies": {
-    "effect": "^3.11.7"
+    "effect": "^3.11.8"
   },
   "peerDependencies": {
-    "effect": "^3.11.7"
+    "effect": "^3.11.8"
   }
 }
